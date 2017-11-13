@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 style="text-align: center;">STAR WARS API</h1>
+<form method="POST">
+    <div class="form-group">
+        <label for="thing">Select your thing:</label>
+        <input class="selectpicker" name="thing" id="thing" list="searchable" />
+        <datalist id="searchable">
+            <option value="people">People</option>
+            <option value="planets">Planets</option>
+            <option value="starships">Spaceships</option>
+            <option value="vehicles">Vehicles</option>
+            <option value="species">Species</option>
+        </datalist>
+    </div>
+    <div class="form-group">
+        <label for="number">Enter the thing number:</label>
+        <!-- Not every number has an entry -->
+        <input type="number" id="number" name="number" />
+    </div>
+    <div class="form-group">
+        <input type="submit" class="btn btn-primary" name="search" value="Search" />
+    </div>
+</form>
+{% endblock %}

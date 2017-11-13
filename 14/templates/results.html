@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Name: {{ name }}</h1>
+
+{% if orbital is defined %}
+<p>Orbital: {{ orbital }}</p>
+{% endif %}
+
+{% if population is defined %}
+<p>population: {{ population }}</p>
+{% endif %}
+
+{% if model is defined %}
+<p>model: {{ model }}</p>
+{% endif %}
+
+{% if starship_class is defined %}
+<p>starship_class: {{ starship_class }}</p>
+{% endif %}
+
+{% if manufacturer is defined %}
+<p>manufacturer: {{ manufacturer }}</p>
+{% endif %}
+
+{% if height is defined %}
+<p>height: {{ height }}</p>
+{% endif %}
+
+{% if gender is defined %}
+<p>gender: {{ gender }}</p>
+{% endif %}
+
+{% if classification is defined %}
+<p>classification: {{ classification }}</p>
+{% endif %}
+
+{% if lifespan is defined %}
+<p>lifespan: {{ lifespan }}</p>
+{% endif %}
+
+<a href="http://127.0.0.1:5000">Return to search page</a>
+{% endblock %}
